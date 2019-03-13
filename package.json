@@ -36,6 +36,7 @@
     "storybook": "start-storybook -p 9002",
     "test": "npm run lint && jest",
     "tdd": "jest --watch",
+    "prepare": "npm run build",
     "release": "release",
     "prettier": "prettier '**/*js' !examples/bundle.js '!lib/**' --write ",
     "precommit": "lint-staged"
