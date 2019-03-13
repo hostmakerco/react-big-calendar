@@ -167,7 +167,8 @@ class Selection {
       )
     })
     const touchStartListener = addEventListener('touchstart', e => {
-      this._onInitialEventListener.remove()
+      // https://github.com/intljusticemission/react-big-calendar/issues/1243#issuecomment-472379731
+      // this._onInitialEventListener.remove()
       this._onInitialEventListener = this._addLongPressListener(
         this._handleInitialEvent,
         e
